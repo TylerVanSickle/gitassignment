@@ -9,6 +9,3 @@ h1{
     width: 50px;
     background-color: green;    
 }
-.box::hover{
-    scale: 1.5;
-}
