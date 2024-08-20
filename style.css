@@ -1,11 +1,27 @@
 *{
     margin: 0;
 }
-h1{
-    color: red;
+body{
+    background-color: rgb(60, 57, 53);
+}
+header{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
 }
 .box{
-    height: 50px;
-    width: 50px;
-    background-color: green;    
+    height: 250px;
+    width: 250px;
+    background-color: green;
+    display: grid;
+    place-self: center;    
+}
+.sectionMain{
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
 }
