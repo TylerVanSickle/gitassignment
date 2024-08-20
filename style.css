@@ -19,7 +19,7 @@ header{
     display: grid;
     place-self: center;    
     animation-name: boxSpin;
-    animation-duration: 4s;
+    animation-duration: 8s;
     animation-iteration-count: 2;
     animation-delay: 250ms;
 }
@@ -40,9 +40,26 @@ header{
     80%{scale: 1.2;}
     100%{scale: 1; border: 4px dashed white;}
 }
+
 .sectionMain{
     height: 90vh;
     width: 100%;
     display: grid;
     place-content: center;
+}
+.smallLinks a{
+    left: 10px;
+    color: white;
+    text-decoration: none;
+}
+.smallLinks a:hover{
+    text-decoration: underline;
+}
+
+.linkDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75px;
 }
