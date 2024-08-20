@@ -13,11 +13,32 @@ header{
     margin-top: 15px;
 }
 .box{
-    height: 250px;
-    width: 250px;
-    background-color: green;
+    height: 500px;
+    width: 500px;
+    background-color: black;
     display: grid;
     place-self: center;    
+    animation-name: boxSpin;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-delay: 250ms;
+}
+@keyframes boxSpin {
+    0%{transform: rotateZ(0);}
+    50%{transform: rotateZ(180deg);}
+    100%{transform: rotateZ(360deg);}
+}
+.box:hover{
+    animation-name: borderThing;
+    animation-duration: 2s;
+}
+@keyframes borderThing {
+    0%{border-left: 4px dashed white;}
+    25%{border-top: 4px dashed white;}
+    50%{border-right: 4px dashed white;}
+    75%{border-bottom: 4px dashed white;}
+    80%{scale: 1.2;}
+    100%{scale: 1; border: 4px dashed white;}
 }
 .sectionMain{
     height: 90vh;
